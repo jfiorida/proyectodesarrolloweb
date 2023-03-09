@@ -29,8 +29,8 @@ nav ul  {  background-color: grey; color: lightcoral;
             font-family: 'Comfortaa', cursive; 
 
 }
-body{ background-color: rgb(247, 185, 185);
-    
+body{background: rgb(210,228,236);
+    background: linear-gradient(239deg, rgba(210,228,236,1) 35%, rgba(233,119,171,1) 70%, rgba(97,105,107,1) 100%);
 
 font-family: 'Yellowtail', cursive;
 }
@@ -76,11 +76,48 @@ font-family: 'Yellowtail', cursive;
     height: 500px; 
     border-style: groove;
 }
+
 .qs{
-    display: flex;
-    contain: content;
+    display: grid;
+    grid-template-columns:20% 20% 20% 20% 20%;
+   
+    justify-content: space-around;
+    align-items: start;
+    justify-items: start;
+   
 
 }
+.img_log{
+    width: auto;
+    height: auto;
+    opacity: 0,5;
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.foto_prof{
+width: auto;
+height: auto; 
+ 
+}
+.p_qs{
+    grid-row: 1/3;
+    grid-column: 3/6;
+}
+.vid_qs{
+   grid-column: 4/6;
+   grid-rows: 3/6;
+   
+
+   }
+.prof_cosm{
+    width: auto;
+    height: auto; 
+    grid-column: 1/4;
+    grid-row: 3/6;
+    
+
+}
+
 .main.form{
     background-image: url(../images/20210808_213029_0000.png);
     background-repeat: no-repeat;
