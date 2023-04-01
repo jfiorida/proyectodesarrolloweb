@@ -1,6 +1,7 @@
-/*padding : 0
-margin : 0
-box-sixing:border-box;*/
+*/* {padding : 0
+    margin : 0
+     box-sixing:border-box;
+  }*/
 h1 {color: floralwhite;
      background-color:rgb(180, 173, 173);
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -10,21 +11,29 @@ h1 {color: floralwhite;
             padding-left: 150px;
             overflow: hidden
     }
-nav ul li {text-decoration: none;list-style-type: none;
-            color: floralwhite;
-            display: inline-block;
-            padding: 0 40px;
-            color: lightpink;
-            font-family: 'Comfortaa', cursive;
-}
+
 nav ul  {  background-color: grey; color: lightcoral;
             font-family: 'Comfortaa', cursive; 
-
+            li {text-decoration: none;list-style-type: none;
+                color: floralwhite;
+                display: inline-block;
+                padding: 0 40px;
+                color: lightpink;
+                font-family: 'Comfortaa', cursive;
+                a{ text-decoration: none;
+                    color: aliceblue;
+                    & :hover{
+                        color: white;
+                        font-size: 2     rem;
+                    }
+                }
+    }
+               
 }
 body{background: rgb(210,228,236);
     background: linear-gradient(239deg, rgba(210,228,236,1) 35%, rgba(233,119,171,1) 70%, rgba(97,105,107,1) 100%);
 
-font-family: 'Yellowtail', cursive;
+    font-family: 'Yellowtail', cursive;
 }
 
 .cont_port {
