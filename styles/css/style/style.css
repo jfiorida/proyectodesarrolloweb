@@ -1,4 +1,10 @@
-* h1 {
+body {
+  /* background: rgb(210,228,236);*/
+  background: linear-gradient(239deg, rgb(210, 228, 236) 35%, rgb(233, 119, 171) 70%, rgb(97, 105, 107) 100%);
+  font-family: "Yellowtail", cursive;
+}
+
+h1 {
   color: floralwhite;
   background-color: rgb(180, 173, 173);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -34,12 +40,6 @@ nav ul li a :hover {
   font-size: 2 rem;
 }
 
-body {
-  background: rgb(210, 228, 236);
-  background: linear-gradient(239deg, rgb(210, 228, 236) 35%, rgb(233, 119, 171) 70%, rgb(97, 105, 107) 100%);
-  font-family: "Yellowtail", cursive;
-}
-
 .cont_port {
   display: flex;
   flex-flow: row wrap;
@@ -55,6 +55,7 @@ body {
   height: 300px;
   font-size: 2rem;
   border-style: groove;
+  border-radius: 20%;
   text-align: center;
 }
 
@@ -85,22 +86,24 @@ body {
   flex-direction: row;
   width: 500px;
   height: 500px;
-  border-style: groove;
+  /* border-style: groove;*/
 }
 
 .qs {
   width: 100%;
   display: grid;
-  grid-template-rows: 1fr, 1fr;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-areas: "logo parraf" "fotop video ";
+  justify-content: center;
+  justify-items: center;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-areas: "video logo brocha" "video fotop brocha " "parraf parraf parraf";
 }
 
 @media screen and (max-width: 480px) {
   .qs {
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "logo" "parraf" "fotop" "video";
+    grid-template-areas: "logo" "parraf" "brocha" "fotop" "video";
   }
   .p_qs.leyenda {
     width: 300px;
@@ -123,7 +126,14 @@ body {
   grid-area: fotop;
 }
 
-.main.form {
+.brocha {
+  grid-area: brocha;
+}
+
+.cuerpo_contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-image: url(../images/20210808_213029_0000.png);
   background-repeat: no-repeat;
   background-size: cover;
